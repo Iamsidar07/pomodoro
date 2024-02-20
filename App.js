@@ -2,6 +2,7 @@ import { Pressable, Text, View } from "react-native";
 import { NativeWindStyleSheet } from "nativewind";
 import { useState } from "react";
 
+
 NativeWindStyleSheet.setOutput({
   default: "native",
 });
@@ -62,6 +63,8 @@ export default function App() {
       }
     }
   }
+
+  const pomodoro = new Pomodoro()
 
   return (
     <View className="flex-1 w-full">
